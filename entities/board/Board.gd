@@ -27,7 +27,7 @@ func generateTiles() -> void:
 				tileCount -= 1
 
 func instanceNode(x, y, tileNumber):
-	var newTile = load("res://BoardTile.tscn").instance()
+	var newTile = load("res://entities/boardTiles/BoardTile.tscn").instance()
 	add_child(newTile)
 	newTile.set_name('tile'+str(tileNumber))
 	newTile.setTileNumber(tileNumber)

@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Board.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Dice.tscn" type="PackedScene" id=2]
-[ext_resource path="res://StartPlace.tscn" type="PackedScene" id=3]
+[ext_resource path="res://entities/board/Board.tscn" type="PackedScene" id=1]
+[ext_resource path="res://entities/dice/Dice.tscn" type="PackedScene" id=2]
+[ext_resource path="res://entities/piece_start_place/StartPlace.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Game World.gd" type="Script" id=4]
-[ext_resource path="res://Controller.tscn" type="PackedScene" id=5]
+[ext_resource path="res://entities/logic_controller/Controller.tscn" type="PackedScene" id=5]
 
 [node name="Game World" type="Node2D"]
 script = ExtResource( 4 )

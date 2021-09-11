@@ -12,17 +12,17 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "Board",
 "language": "GDScript",
-"path": "res://Board.gd"
+"path": "res://entities/board/Board.gd"
 }, {
 "base": "Node2D",
 "class": "BoardTile",
 "language": "GDScript",
-"path": "res://BoardTile.gd"
+"path": "res://entities/boardTiles/BoardTile.gd"
 }, {
 "base": "Node2D",
 "class": "Dice",
 "language": "GDScript",
-"path": "res://Dice.gd"
+"path": "res://entities/dice/Dice.gd"
 } ]
 _global_script_class_icons={
 "Board": "",

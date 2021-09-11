@@ -8,7 +8,7 @@ func _ready():
 	pass # Replace with function body.
 
 func getTileLocation() -> Vector2:
-	return Vector2(0, 0)
+	return position
 
 func setTileLocation(newPosition: Vector2) -> void:
 	position = newPosition
@@ -18,3 +18,8 @@ func getTileNumber() -> int:
 	
 func setTileNumber(tile: int) -> void:
 	tileNumber.text = str(tile)
+	
+
+#func _on_Control_gui_input(event):
+#	if (event is InputEventMouseButton && event.pressed && event.button_index ==1):
+#		print('pass')

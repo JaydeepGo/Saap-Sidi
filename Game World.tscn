@@ -1,8 +1,23 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Board.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Dice.tscn" type="PackedScene" id=2]
+[ext_resource path="res://StartPlace.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Game World.gd" type="Script" id=4]
+[ext_resource path="res://Controller.tscn" type="PackedScene" id=5]
 
 [node name="Game World" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="StartPlace" parent="." instance=ExtResource( 3 )]
+position = Vector2( 79.918, 519.497 )
 
 [node name="Board" parent="." instance=ExtResource( 1 )]
-position = Vector2( 261.555, 84.2169 )
+position = Vector2( 295.555, 80.2169 )
+
+[node name="Dice" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1085.92, 545.497 )
+scale = Vector2( 2, 2 )
+
+[node name="Controller" parent="." instance=ExtResource( 5 )]
+position = Vector2( 92.9445, 191.56 )

@@ -21,3 +21,12 @@ align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Control" type="Control" parent="."]
+margin_right = 64.0
+margin_bottom = 64.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="gui_input" from="Control" to="." method="_on_Control_gui_input"]
